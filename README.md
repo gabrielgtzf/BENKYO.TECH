@@ -1,9 +1,13 @@
-Contrato de Token BENKIO.TECH escrito en AssemblyScript
+Contrato de Token BENKYO.TECH escrito en AssemblyScript
 =======================================================
 
 <!-- MAGIC COMMENT: DO NOT DELETE! Everything above this line is hidden on NEAR Examples page -->
 
 Este proyecto contiene una implementación de un contrato de token similar a [ERC20]. Usaremos la consola para ejecutar comandos para inicializar, enviar y obtener el saldo del token BENKYO.TECH.
+
+Este token será utilizado para cambiarlo dentro de la plataforma de BENKYO.TECH. Esta plataforma se utilizará como un portal de estudios donde los aspirantes intercambiarán los tokens por cursos, por conocimientos entre los mismos estudiantes, por complir objetivos de planes de estudio, etc.
+
+Puedes ir a https://www.benkyo.tech/ (En construcción).
 
 Pre-Requisitos
 ==============
@@ -27,6 +31,7 @@ Ahora que tenemos todo podemos iniciar
 2. Instala las dependencias:
 
     `cd BENKYO.TECH && yarn`
+    `yarn install`
 
 3. Procedemos a compilar:
 
@@ -69,5 +74,5 @@ Pruebas
 
 Pudes correr las pruebas ejecutando el siguiente comando:
 
-`yarn asp`
+`yarn asp --verbose`
   
