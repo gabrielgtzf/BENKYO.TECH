@@ -30,8 +30,7 @@ Ahora que tenemos todo podemos iniciar
     
 2. Instala las dependencias:
 
-    `cd BENKYO.TECH && yarn`
-    `yarn install`
+    `cd BENKYO.TECH && yarn install`
 
 3. Procedemos a compilar:
 
