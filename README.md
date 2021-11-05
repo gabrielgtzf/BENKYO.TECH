@@ -21,27 +21,27 @@ Iniciemos
     
 2. Instala las dependencias:
 
-    `yarn`
+    `cd BENKYO.TECH && yarn`
 
-2. Procedemos a compilar:
+3. Procedemos a compilar:
 
-    yarn dev
+    `yarn asb --verbose`
 
 
-Standard deploy option
+Ahora vamos con el despliegue del contrato
 ----------------------
 
-In this second option, the smart contract will get deployed to a specific account created with the NEAR Wallet.
+El contrato inteligente se implementará en la cuenta específica creada con NEAR Wallet.
 
-1. Ensure `near-cli` is installed by running:
+1. Corrobora que `near-cli` ya esta instalado ejecutando el siguiente comando:
 
-       near --version
+       `near --version`
 
-   If needed, install `near-cli`:
+   Si es necesario, instala `near-cli`:
 
-       npm install near-cli -g
+       `npm install near-cli -g`
 
-2. If you do not have a NEAR account, please create one with [NEAR Wallet](https://wallet.nearprotocol.com). Then, in the project root, login with `near-cli` by following the instructions after this command:
+2. Ahora ingresamos con `near-cli` siguiendo las instrucciones ejecutando el siguiente comando:
 
        near login
 
