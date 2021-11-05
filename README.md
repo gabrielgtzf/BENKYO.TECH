@@ -13,19 +13,17 @@ La forma más sencilla de crear una cuenta en NEAR es con NEAR Wallet. NEAR tien
 
 https://docs.near.org/docs/develop/basics/create-account#creating-a-testnet-account
 
-testnet
-mainnet
-
-
-
-Quick option
+Iniciemos
 ---------------
+1. Clona el proyecto:
 
-1. Install dependencies:
+    `git clone https://github.com/gabrielgtzf/BENKYO.TECH.git`
+    
+2. Instala las dependencias:
 
-    yarn
+    `yarn`
 
-2. Build and deploy this smart contract to a development account. This development account will be created automatically and is not intended for reuse:
+2. Procedemos a compilar:
 
     yarn dev
 
