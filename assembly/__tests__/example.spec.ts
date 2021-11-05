@@ -1,21 +1,21 @@
 import { init, balanceOf, totalSupply, transferFrom } from "..";
 import { VM } from "near-sdk-as";
 
-const alice: string = "alice";
-const bob: string = "bob";
+const gabo: string = "gabo";
+const nicolas: string = "nicolas";
 
 function logs(): string[] {
   return VM.outcome().logs;
 }
 
-describe("Token Contract should be", () => {
-  it("created with full amount", () => {
-    init(alice);
-    expect(logs()).toContainEqual("initialOwner: " + alice);
-    expect(balanceOf(alice)).toBe(U64.parseInt(totalSupply()), "starting balance should be " + totalSupply());
+describe("El Token BENKYO.TECH deberia...", () => {
+  it("Crearse sin ningún problema", () => {
+    init(gabo);
+    expect(logs()).toContainEqual("initialOwner: " + gabo);
+    expect(balanceOf(gabo)).toBe(U64.parseInt(totalSupply()), "el balance inicial deberia de ser " + totalSupply());
   });
 
-  throws("A non existent account cannot transfer tokens", () => {
-    transferFrom(bob, alice, 1);
+  throws("Lanzar error si intentas transferir tokens BENKYO.TECH entre cuentas inexistentes", () => {
+    transferFrom(nicolas, gabo, 1);
   });
 });

@@ -4,16 +4,9 @@
   "license": "MIT",
   "version": "0.0.1",
   "scripts": {
-    "build": "asb --verbose",
-    "dev:deploy:contract": "near dev-deploy --wasmFile=\"./build/release/contract.wasm\"",
-    "deploy:contract": "near deploy",
-    "deploy": "yarn build && yarn deploy:contract && yarn deploy:pages",
-    "prestart": "yarn build && yarn deploy:contract",
-    "start": "parcel src/index.html",
-    "asp": "asp --verbose",
-    "test": "yarn asp && yarn jest",
-    "jest": "yarn build && jest test",
-    "dev": "yarn build && yarn dev:deploy:contract && env-cmd -f ./neardev/dev-account.env parcel src/index.html"
+    "init:contract": "node src/init.js",
+    "balance:of": "node src/balanceOf.js",
+    "transfer": "node src/transfer.js"
   },
   "devDependencies": {
     "dotenv": "^10.0.0",

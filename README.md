@@ -37,36 +37,32 @@ Ahora vamos con el despliegue del contrato
 
 El contrato inteligente se implementará en la cuenta específica creada con NEAR Wallet.
 
-1. Modifica el archivo `src/config.js` para que incuyas tu cuenta de NEAR que acabas de usar para ingresar.
-
-    `const ACCOUNT_NAME = 'YOUR_ACCOUNT_NAME_HERE';`
-
-2. Ahora ingresamos con `near-cli` siguiendo las instrucciones ejecutando el siguiente comando:
+1. Ahora ingresamos con `near-cli` siguiendo las instrucciones ejecutando el siguiente comando:
 
     `near login`
 
+2. Vamos a establecer una variable de entorno para la identificación de tu cuenta .testnet:
+
+    `ID=your_account_name.testnet && echo $ID`
+
 3. Hacemos el despliegue:
 
-    `near deploy`
+    `near deploy --wasmFile build/release/benkyo-tech.wasm --accountId $ID`
 
-4. Iniciamos sesion para poder ejecutar los comandos del contrato:
+4. Inicializamos el contrato con el siguiente comando:
 
-    `parcel src/index.html`
+    `OWNER=$ID yarn init:contract`
 
 Comandos que podemos ejecutar
 -----------------------------
 
-1. Iniciar el contrato:
+1. Checar el balance:
 
-    `await contract.init({initialOwner: walletAccount.getAccountId()})`
+    `CN=$ID yarn balance:of`
 
-2. Checar el balance:
+2. Enviar fondos. Sustituye `account_name` por la cuenta a la cual deseas enviar los fondos y `tokens_to_send` por la cantidad de tokens BENKYO.TECH a enviar:
 
-    `await contract.balanceOf({tokenOwner: walletAccount.getAccountId()})`
-
-3. Enviar fondos:
-
-    `await contract.transfer({to: 'bob.near', tokens: '1000'})`
+    `CN=$ID TO=account_name.testnet TS=tokens_to_send yarn transfer`
 
 Pruebas
 ==================
