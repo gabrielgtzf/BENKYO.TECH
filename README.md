@@ -1,22 +1,21 @@
-Token Contract in AssemblyScript
-================================
-
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/near-examples/token-contract-as)
+Contrato de Token BENKIO.TECH escrito en AssemblyScript
+=======================================================
 
 <!-- MAGIC COMMENT: DO NOT DELETE! Everything above this line is hidden on NEAR Examples page -->
 
-This project contains an implementation of a token contract similar to [ERC20](https://theethereum.wiki/w/index.php/ERC20_Token_Standard) but simpler. We'll visit a page, sign in and use your browser's console to run commands to initialize, send, and get the balance of a custom token.
+Este proyecto contiene una implementación de un contrato de token similar a [ERC20]. Usaremos la consola para ejecutar comandos para inicializar, enviar y obtener el saldo del token BENKYO.TECH.
 
-**Note**: this example uses a basic version of a token. It is not the supported token contract laid out in the [NEAR Enhancement Proposal for non-fungible tokens](https://github.com/nearprotocol/NEPs/pull/4).
-Visit [this example](https://github.com/near-examples/NFT) illustrating implementations of the non-fungible token in Rust and AssemblyScript. It is not recommended to deploy non-fungible tokens written in AssemblyScript for financial use cases.
+Pre-Requisitos
+==========
 
+Debes crear su propia cuenta NEAR para poder implementar el contrato en la red de pruebas.
+La forma más sencilla de crear una cuenta en NEAR es con NEAR Wallet. NEAR tiene varias redes de desarrollo que operan de forma independiente entre sí con sus propios ID de cuenta. La siguiente guía (En ingles) te ayudará a crear tu cuenta en la red de pruebas de NEAR:
 
-Getting started
-===============
+https://docs.near.org/docs/develop/basics/create-account#creating-a-testnet-account
 
-There's a button at the top of this file that says "Open in Gitpod." If you want to try out this project as fast as possible, that's what you want. It will open the project in your browser with a complete integrated development environment configured for you. If you want to run the project yourself locally, read on.
+testnet
+mainnet
 
-There are two ways to run this project locally. The first is quick, and a good way to instantly become familiar with this example. Once familiar, the next step is to create your own NEAR account and deploy the contract to testnet.
 
 
 Quick option
