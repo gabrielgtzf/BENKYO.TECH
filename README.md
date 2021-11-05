@@ -35,23 +35,27 @@ El contrato inteligente se implementará en la cuenta específica creada con NEA
 
 1. Corrobora que `near-cli` ya esta instalado ejecutando el siguiente comando:
 
-       `near --version`
+    `near --version`
 
    Si es necesario, instala `near-cli`:
 
-       `npm install near-cli -g`
+    `npm install near-cli -g`
 
 2. Ahora ingresamos con `near-cli` siguiendo las instrucciones ejecutando el siguiente comando:
 
-       near login
+    `near login`
 
-3. Modify the top of `src/config.js`, changing the `CONTRACT_NAME` to be the NEAR account that you just used to log in.
+3. Modifica el inicio del archivo `src/config.js`, cambiando `ACCOUNT_NAME` por tu cuenta de NEAR que acabas de usar para ingresar.
 
-       const CONTRACT_NAME = process.env.CONTRACT_NAME || 'YOUR_ACCOUNT_NAME_HERE'; /* TODO: fill this in! */
+    `const ACCOUNT_NAME = 'YOUR_ACCOUNT_NAME_HERE';`
 
-4. Start the example!
+4. Hacemos el despliegue:
 
-       yarn start
+    `near deploy`
+
+5. Inicia el ejemplo!
+
+    `yarn start`
 
 
 Exploring The Code

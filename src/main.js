@@ -3,7 +3,7 @@ import "regenerator-runtime/runtime";
 import * as nearAPI from "near-api-js"
 import getConfig from "./config"
 
-let nearConfig = getConfig(process.env.NODE_ENV || "development");
+let nearConfig = getConfig();
 // Connects to NEAR and provides `near`, `walletAccount` and `contract` objects in `window` scope
 async function connect() {
   // Initializing connection to the NEAR node.
