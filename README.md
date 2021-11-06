@@ -72,11 +72,15 @@ Comandos que podemos ejecutar
 
     `CN=$ID TO=account_name.testnet TS=tokens_to_send yarn transfer`
 
-4. Aprobar fondos. Sustituye `account_name` por la cuenta a la cual deseas la aprobación de los fondos y `tokens_to_approve` por la cantidad de tokens BENKYO.TECH a aprobar:
+4. Aprobar retiro de fondos. Sustituye `account_name` por la cuenta a la cual deseas la aprobación de los fondos y `tokens_to_approve` por la cantidad de tokens BENKYO.TECH a aprobar:
 
     `CN=$ID SPN=account_name.testnet TA=tokens_to_approve yarn transfer`
 
-5. Enviar fondos desde una cuenta específica. Sustituye `account_name` por la cuenta a la cual deseas enviar los fondos y `tokens_to_send` por la cantidad de tokens BENKYO.TECH a enviar:
+5. Conceder permisos de transferencia a terceros. Sustituye `account_name` por la cuenta a la cual deseas concederles los permisos y `spender` por la cuenta de tokens BENKYO.TECH :
+
+    `CN=$ID OWN=account_name.testnet SPN=spender.testnet yarn allowance`    
+
+6. Enviar fondos desde una cuenta específica. Sustituye `account_name` por la cuenta a la cual deseas enviar los fondos y `tokens_to_send` por la cantidad de tokens BENKYO.TECH a enviar:
 
     `CN=$ID TO=account_name.testnet TS=tokens_to_send yarn transfer`
 

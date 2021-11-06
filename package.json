@@ -8,7 +8,8 @@
     "balance:of": "node src/balanceOf.js",
     "transfer": "node src/transfer.js",
     "total:supply": "node src/totalSupply.js",
-    "approve": "node src/approve.js"
+    "approve": "node src/approve.js",
+    "allowance": "node src/allowance.js" 
   },
   "devDependencies": {
     "dotenv": "^10.0.0",
