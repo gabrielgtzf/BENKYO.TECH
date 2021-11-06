@@ -7,19 +7,19 @@
     "init:contract": "node src/init.js",
     "balance:of": "node src/balanceOf.js",
     "transfer": "node src/transfer.js",
-    "total:supply": "node src/totalSupply.js"
+    "total:supply": "node src/totalSupply.js",
+    "approve": "node src/approve.js"
   },
   "devDependencies": {
     "dotenv": "^10.0.0",
     "env-cmd": "^10.1.0",
     "jest": "^27.0.6",
-    "near-sdk-as": "^3.2.3",
     "near-cli": "^2.1.1",
+    "near-sdk-as": "^3.2.3",
     "parcel-bundler": "^1.12.5"
   },
   "dependencies": {
-    "near-api-js": "^0.42.0",
-    "regenerator-runtime": "^0.13.9"
+    "near-api-js": "^0.42.0"
   },
   "jest": {
     "testEnvironment": "near-cli/test_environment",
