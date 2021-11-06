@@ -2,7 +2,6 @@
 import { context, storage, logging, PersistentMap } from "near-sdk-as";
 
 // --- contract code goes below
-
 const balances = new PersistentMap<string, u64>("b:");
 const approves = new PersistentMap<string, u64>("a:");
 

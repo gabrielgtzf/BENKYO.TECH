@@ -6,7 +6,8 @@
   "scripts": {
     "init:contract": "node src/init.js",
     "balance:of": "node src/balanceOf.js",
-    "transfer": "node src/transfer.js"
+    "transfer": "node src/transfer.js",
+    "total:supply": "node src/totalSupply.js"
   },
   "devDependencies": {
     "dotenv": "^10.0.0",

@@ -60,13 +60,22 @@ El contrato inteligente se implementará en la cuenta específica creada con NEA
 Comandos que podemos ejecutar
 -----------------------------
 
-1. Checar el balance:
+1. Checar el subministro total de tokens:
 
-    `CN=$ID yarn balance:of`
+    `CN=$ID yarn total:supply`
 
-2. Enviar fondos. Sustituye `account_name` por la cuenta a la cual deseas enviar los fondos y `tokens_to_send` por la cantidad de tokens BENKYO.TECH a enviar:
+2. Checar el balance. Sustituye `account_name` por la cuenta deseada:
+
+    `CN=$ID OWN=account_name.testnet yarn balance:of`
+
+3. Enviar fondos. Sustituye `account_name` por la cuenta a la cual deseas enviar los fondos y `tokens_to_send` por la cantidad de tokens BENKYO.TECH a enviar:
 
     `CN=$ID TO=account_name.testnet TS=tokens_to_send yarn transfer`
+
+4. Enviar fondos desde una cuenta específica. Sustituye `account_name` por la cuenta a la cual deseas enviar los fondos y `tokens_to_send` por la cantidad de tokens BENKYO.TECH a enviar:
+
+    `CN=$ID TO=account_name.testnet TS=tokens_to_send yarn transfer`
+
 
 Pruebas
 ==================
@@ -75,3 +84,9 @@ Pudes correr las pruebas ejecutando el siguiente comando:
 
 `yarn asp --verbose`
   
+Equipo de desarrollo
+====================
+
+Gabriel Gutiérrez
+Samuel Nava
+Nicolás 

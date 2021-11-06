@@ -1,13 +1,13 @@
 const { nearContract } = require("./connection");
 
 async function main() {
-    const { CN: accStr, OWN: accOwn } = process.env;
-    console.log("Contract: ", accStr, " TokenOwner: ", accOwn);
-    
+    const { CN: accStr } = process.env;
+    console.log("Contract: ", accStr);
+
     const contract = await nearContract(accStr);
 
-    const balRes = await contract.balanceOf({tokenOwner: accOwn});
-    console.log("Balance total de BENKYO.TECH ", balRes);
+    const balRes = await contract.totalSupply({});
+    console.log("Suministro total de BENKYO.TECH ", balRes);
 }
 
 if (require.main === module) {
