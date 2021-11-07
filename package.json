@@ -9,15 +9,12 @@
     "transfer": "node src/transfer.js",
     "total:supply": "node src/totalSupply.js",
     "approve": "node src/approve.js",
-    "allowance": "node src/allowance.js" 
+    "allowance": "node src/allowance.js",
+    "transfer:from": "node src/transferFrom.js"
   },
   "devDependencies": {
-    "dotenv": "^10.0.0",
-    "env-cmd": "^10.1.0",
-    "jest": "^27.0.6",
     "near-cli": "^2.1.1",
-    "near-sdk-as": "^3.2.3",
-    "parcel-bundler": "^1.12.5"
+    "near-sdk-as": "^3.2.3"
   },
   "dependencies": {
     "near-api-js": "^0.42.0"

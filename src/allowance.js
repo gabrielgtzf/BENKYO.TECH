@@ -6,11 +6,12 @@ async function main() {
 
     const contract = await nearContract(accStr);
 
-    console.log("Concediendo permiso de trasnferencia de tokens a ", spnStr);
     const spnRes = await contract.allowance({tokenOwner: accOwn, spender: spnStr});
-    if(spnRes) {
-        console.log("Se ha concedido el permiso de trasnferencia de tokens BENKYO.TECH a ", spnStr); 
-    }
+    if(spnRes == 0)
+        console.log("No se encontraron approves del par " + accOwn + ":" + spnStr);
+    else
+        console.log("Se encontraron approves del par " + accOwn + ":" + spnStr + " por " + spnRes + " tokens BENKYO.TECH");
+    
 }
 
 if (require.main === module) {

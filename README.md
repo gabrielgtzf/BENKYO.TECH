@@ -34,7 +34,7 @@ Ahora que tenemos todo podemos iniciar
 
 3. Procedemos a compilar:
 
-    `yarn asb --verbose`
+    `yarn asb`
 
 Ahora vamos con el despliegue del contrato
 ------------------------------------------
@@ -74,15 +74,15 @@ Comandos que podemos ejecutar
 
 4. Aprobar retiro de fondos. Sustituye `account_name` por la cuenta a la cual deseas la aprobación de los fondos y `tokens_to_approve` por la cantidad de tokens BENKYO.TECH a aprobar:
 
-    `CN=$ID SPN=account_name.testnet TA=tokens_to_approve yarn transfer`
+    `CN=$ID SPN=account_name.testnet TA=tokens_to_approve yarn approve`
 
-5. Conceder permisos de transferencia a terceros. Sustituye `account_name` por la cuenta a la cual deseas concederles los permisos y `spender` por la cuenta de tokens BENKYO.TECH :
+5. Verificar los permisos de aprobación de fondos. Sustituye `account_name` y `spender` por las cuentas deseadas:
 
     `CN=$ID OWN=account_name.testnet SPN=spender.testnet yarn allowance`    
 
-6. Enviar fondos desde una cuenta específica. Sustituye `account_name` por la cuenta a la cual deseas enviar los fondos y `tokens_to_send` por la cantidad de tokens BENKYO.TECH a enviar:
+6. Enviar fondos desde una cuenta específica. Sustituye `from_account` por la cuenta que tiene los fondos, `to_account` por la cuenta que los recibirá y `tokens_to_send` por la cantidad de tokens BENKYO.TECH a transferir:
 
-    `CN=$ID TO=account_name.testnet TS=tokens_to_send yarn transfer`
+    `CN=$ID FROM=from_account.testnet TO=to_account.testnet TS=tokens_to_send yarn transfer:from`
 
 
 Pruebas
@@ -95,6 +95,6 @@ Pudes correr las pruebas ejecutando el siguiente comando:
 Equipo de desarrollo
 ====================
 
-Gabriel Gutiérrez
-Samuel Nava
-Nicolás 
+1. Gabriel Gutiérrez
+2. Samuel Nava
+3. Nicolás Lizarazo 
